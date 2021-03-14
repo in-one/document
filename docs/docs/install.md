@@ -30,6 +30,9 @@ composer create-project jaguarjack/catchadmin:dev-master catchAdmin
 ```sh
 curl -sS http://install.phpcomposer.com/installer | php
 
+或
+php -r "readfile('http://install.phpcomposer.com/installer');" | php
+
 // 由于某种原因，下载包会非常慢，所以需要修改镜像来加速，推荐阿里镜像。
 composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
 
